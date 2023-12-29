@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "./components/Header/Header";
 
 const StyledHome = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-color: #f0f0f0;
+  min-width: 100vw;
+  min-height: 100vh;
+  /* background-color: #f0f0f0; */
 `;
 
 function Home() {
   return (
     <StyledHome>
-      <h1>Hello world</h1>
+      <Header />
     </StyledHome>
   );
 }

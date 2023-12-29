@@ -7,7 +7,6 @@ import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import { GlobalFonts } from "./assets/styles/fonts";
 import { GlobalResetStyle } from "./assets/styles/cssReset";
 
-import OtherPage from "./pages/OtherPage";
 import Home from "./Home";
 import "./Library.scss";
 
@@ -37,7 +36,6 @@ function App() {
       <ReactLenis ref={lenisRef} autoRaf={false} root>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/otherPage" element={<OtherPage />} />
         </Routes>
       </ReactLenis>
     </>
