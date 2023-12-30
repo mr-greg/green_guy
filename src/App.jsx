@@ -11,33 +11,13 @@ import Home from "./Home";
 import "./Library.scss";
 
 function App() {
-  gsap.registerPlugin(ScrollTrigger);
-  const lenis = useLenis(() => {
-    ScrollTrigger.update();
-  });
-  const lenisRef = useRef(lenis);
-
-  useEffect(() => {
-    function update(time) {
-      lenisRef.current?.raf(time * 1000);
-    }
-
-    gsap.ticker.add(update);
-
-    return () => {
-      gsap.ticker.remove(update);
-    };
-  });
-
   return (
     <>
       <GlobalFonts />
       <GlobalResetStyle />
-      <ReactLenis ref={lenisRef} autoRaf={false} root>
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-        </Routes>
-      </ReactLenis>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+      </Routes>
     </>
   );
 }

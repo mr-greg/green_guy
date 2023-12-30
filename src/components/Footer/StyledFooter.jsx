@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header`
-  padding-top: 15px;
+export const StyledFooter = styled.footer`
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -20,18 +20,10 @@ export const StyledHeader = styled.header`
     color: #05d530;
     opacity: 50%;
   }
-  a {
-    color: rgba(255, 255, 255, 0.7);
-    font-family: "Play";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-    text-transform: uppercase;
+  .catch {
     transition: ease-in-out 0.2s;
   }
-  a:hover {
+  .catch:hover {
     color: #05d530;
     opacity: 50%;
   }
